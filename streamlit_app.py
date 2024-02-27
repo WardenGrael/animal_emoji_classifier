@@ -14,22 +14,14 @@ from sklearn.metrics import classification_report
 # Define the Streamlit app
 def app():
     
-    st.title('Symbol Classification')
-    st.subheader('by Louie F. Cervantes M.Eng., WVSU College of ICT')
+    st.title('Animal Emoji Classifier')
+    st.subheader('by Kyne Gabriel A. de Leon. BSCS 3B')
     
     st.write('Dataset description:')
 
     st.write('Number of features: 64')
     text = """Feature representation: Binary values (1 or 0) representing the 8x8 pixels of an image.
-        Target variable: A single categorical variable representing the class 
-        of the image (e.g., digit recognition, traffic sign classification).
-        Potential Applications:"""
-    st.write(text)
-    st.write('Digit recognition: Identifying handwritten digits from 0-9.')
-    st.write('Traffic sign classification: Classifying different types of traffic signs.')
-    st.write('Character recognition: Recognizing characters from different alphabets.')
-    st.write("""Simple image classification: Classifying simple images into categories 
-             like animal/non-animal, vehicle/non-vehicle, etc.""")
+        Classifies objects into 4 classes (Swords, Aliens, Cats, and Emoji's). 2 types of processing can be chosen, Naive Bayes and Logistic Regression """
 
     # display choice of classifier
     clf = BernoulliNB() 
