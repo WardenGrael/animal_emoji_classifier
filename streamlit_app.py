@@ -17,9 +17,12 @@ def app():
     st.title('Animal Emoji Classifier')
     st.subheader('by Kyne Gabriel A. de Leon. BSCS 3B')
     
-    st.write("""'Dataset description: Feature representation: Binary values (1 or 0) representing the 8x8 pixels of an image.
+    st.write("""Dataset description: Feature representation: Binary values (1 or 0) representing the 8x8 pixels of an image.
         Classifies objects into 4 classes (Swords, Aliens, Cats, and Emoji's). 2 types of processing can be chosen, Naive Bayes and Logistic Regression. """)
 
+
+    st.write("""Current application classifies data according to a binary data set of 1's and 0's in which the 1's represent filled in squares of the 8x8 pixels and the 0's 
+    representing empty squares.""")
     st.write('Number of features: 64')
    
 
